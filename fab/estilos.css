@@ -1,0 +1,153 @@
+.angel{
+    
+    top: 0;
+    background-color: #000000;
+    z-index: 1000;
+    padding: 10px 0;
+    border-bottom: 1px solid #001aff;
+
+}
+.card {
+    width: 190px;
+    height: 254px;
+    border-radius: 20px;
+    background: #000000;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #1144d1;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin: 30px;
+   }
+   
+   .card-details {
+    color: rgb(0, 0, 0);
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+    
+   }
+   
+   .card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #07e2ff;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: large;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color: #f80000;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+   .or{
+    display: flex;
+    
+   }
+   .p{
+    font-size: 100px;
+    
+   }
+   .sidebar {
+    width: 250px;
+    background-color: #000000;
+    color: white;
+    height: 200px; /* Altura completa de la ventana */
+    position: sticky;
+    top: 30px;
+    left: 0;
+    padding: 20px;
+    margin-right: 100px;
+    float: right;
+    
+    
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar ul li a:hover {
+    color: #ddd;
+}
+
+/* Contenido principal */
+main {
+    margin-left: 550px; /* Deja espacio para el menú lateral */
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+section {
+    margin-bottom: 40px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    position: relative;
+    margin-bottom: 2rem; /* Espacio debajo del título */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: rgb(255, 14, 14);
+    bottom: -5px; /* Justo debajo del texto */
+    left: 5%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out; /* Animación */
+    
+}
+
+.section-title:hover::after {
+    width: 100%; /* La línea se extiende al 100% del ancho del texto */
+}
